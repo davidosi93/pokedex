@@ -1,0 +1,395 @@
+body {
+    margin: 0;
+    font-family: 'Bangers', cursive;
+
+}
+
+html {
+    background: url(img/background.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.d-none {
+    display: none;
+}
+
+.header {
+    height: 90px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0.3;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.header:hover {
+    opacity: 1;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header h1 {
+    color: #8A8A8A;
+    font-size: 75px;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.header-image img {
+    height: 90px;
+    margin-right: 30px;
+}
+
+.header-right input {
+    width: 200px;
+    background-color: #31353B;
+    border: none;
+    color: #8A8A8A;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.header-right input:focus {
+    outline: none;
+}
+
+.showCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    color: white;
+    background-image: url(img/pokeballBG.svg);
+    height: 250px;
+    width: 250px;
+    margin: 15px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.card:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.card-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.card-name h2 {
+    margin: 0;
+    font-weight: 100;
+}
+
+.card-image {
+    display: flex;
+    justify-content: center;
+}
+
+.card-image img {
+    height: 150px;
+}
+
+.card-types {
+    display: flex;
+    justify-content: center;
+}
+
+.card-types p {
+    margin: 15px;
+    border: 1px solid;
+    height: 30px;
+    width: 60px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#closeDivBtn {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.303);
+}
+
+#showBigCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: -1;
+    position: fixed;
+    top: 8%;
+    bottom: 8%;
+    left: 23%;
+    right: 23%;
+}
+
+.big-card {
+    max-height: 85vh;
+    color: white;
+    z-index: -1;
+    width: 66vh;
+    border-radius: 20px;
+}
+
+.big-card h1 {
+    margin: 0;
+}
+
+.big-card img {
+    height: 300px;
+    margin-bottom: 15px;
+}
+
+.big-card-head {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.big-card-header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+.big-card-header-arrow {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.big-card-header-arrow img {
+    height: 35px !important;
+    cursor: pointer;
+}
+
+.big-card-header-arrow p {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.close-btn p {
+    cursor: pointer;
+}
+
+.close-btn img {
+    height: 35px !important;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.big-card-info {
+    background-image: url(img/pokeballBG.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+}
+
+.big-card-info-content p {
+    margin: 15px;
+    border: 1px solid;
+    height: 30px;
+    width: 90px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-container {
+    height: 35vh;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: -55px;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.info-container-name {
+    color: black;
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-container-name p {
+    margin-right: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.w3-border {
+    width: 300px;
+    height: 15px;
+}
+
+.w3-grey {
+    border-radius: 10px;
+    background-color: #98fb007d;
+    height: 15px;
+    max-width: 100%;
+    font-size: 15px;
+}
+
+.w3-grey p {
+    margin-left: 50px;
+}
+
+@media (max-width: 800px) {
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 55px;
+        background-color: rgba(0, 0, 0, 0);
+        opacity: 0.2;
+    }
+
+    .header h1 {
+        display: none;
+    }
+
+    .header-image img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .header-right input {
+        text-align: center;
+        height: 40px;
+        padding: 0;
+    }
+
+    #showBigCard {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .big-card {
+        width: 100vw;
+        height: 100vh;
+        max-height: 100vh;
+    }
+
+    .big-card h1 {
+        margin-bottom: 6%;
+    }
+
+    .big-card img {
+        z-index: 2;
+        height: 25vh;
+        margin: 0;
+    }
+
+    .big-card-head {
+        margin-bottom: 3%;
+    }
+
+    .big-card-header {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+
+    .big-card-header-arrow {
+        padding: 3%;
+    }
+
+    .big-card-info {
+        display: flex;
+        flex-direction: column;
+        background-image: none;
+    }
+
+    .big-card-info-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .big-card-info-content p {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+    .big-card-info-image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .info-container {
+        height: 44%;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .info-container-name {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info-container-name p {
+        margin-bottom: 5px;
+    }
+
+    .w3-border {
+        display: flex;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .w3-grey {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .w3-grey p {
+        margin: 0;
+    }
+}
+
